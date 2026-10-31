@@ -79,7 +79,6 @@ git push -u origin main
 | --- | --- |
 | <img src="images/dashboard.png" width="250" alt="合成作业总览示例" /> | <img src="images/connections.png" width="250" alt="合成连接管理示例" /> |
 
-这些示例使用合成数据。`researcher`、`*.example.org`、作业名、ID 和节点是展示占位符。
 
 在根目录 README 中添加图片可以使用：
 
@@ -101,7 +100,6 @@ git push -u origin main
 
 1. 进入仓库 **Releases**，创建一个草稿发布。
 2. 标签使用 `v1.9.0`，标题使用 `Slurm 集群监控 1.9.0`。
-3. 从 [CHANGELOG.md](../CHANGELOG.md) 摘取本版说明，明确真实设备和小米宿主的验证范围。
 4. 附加 APK 与对应的 SHA256 校验文件，核对后再发布。
 
 GitHub 支持在 Release 中附加二进制文件；先建立草稿可便于完整核对附件。[GitHub 发布说明](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)

@@ -61,7 +61,6 @@ SLURM_SSH_FIXTURE="$PWD/.tooling/ssh-fixture" flutter test --concurrency=1
 
 没有本地发布密钥时，现有 Gradle 配置回退到 debug 签名，适用于开发测试。向用户分发前检查签名；升级必须沿用同一应用身份与签名。
 
-Android 原生检查可在模拟器中构建安装 debug 应用与 androidTest APK 后，通过 `adb shell am instrument -w com.example.slurm_cluster_monitor.test/com.example.slurm_cluster_monitor.XiaomiWidgetInstrumentation` 运行。普通 Android 模拟器不能替代小米宿主验收。
 
 ## 公开安装包的路径与符号
 
@@ -80,4 +79,3 @@ flutter build apk --release --split-debug-info=.tooling/symbols/android
 
 1.9.0 原交付记录为静态分析通过、193 项 Flutter 回归通过 / 1 项真实集群跳过、11 项原生组件检查通过。本公开副本没有修改 `lib/` 或 Android 应用功能代码，仅调整发布文档、忽略/打包规则、测试数据/字体路径及 Web 图标元数据。本次另行运行静态分析与相关 7 项测试，均通过；没有重复运行整套历史测试。完整核验范围见 [脱敏记录](PRIVACY_REVIEW.md)。
 
-真实 VPN、Android 后台预算、手机 GPU/耗电、Slurm 插件差异与小米卡片宿主仍需实际设备验证。
