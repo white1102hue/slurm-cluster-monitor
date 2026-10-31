@@ -1,0 +1,35 @@
+{
+    "name": "Slurm 集群监控 · 示例预览",
+    "short_name": "Slurm",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0A121D",
+    "theme_color": "#0A121D",
+    "description": "多集群 Slurm 监控应用的示例界面预览。真实监控请安装 Android 应用。",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

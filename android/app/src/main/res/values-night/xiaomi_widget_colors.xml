@@ -1,0 +1,6 @@
+<resources>
+    <color name="xiaomi_widget_background">#131E2C</color>
+    <color name="xiaomi_widget_text">#F2F6FA</color>
+    <color name="xiaomi_widget_muted">#A8B8CA</color>
+    <color name="xiaomi_widget_accent">#63DFC5</color>
+</resources>

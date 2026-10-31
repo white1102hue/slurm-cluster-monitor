@@ -1,0 +1,6 @@
+# Copy to key.properties and use your own release signing key.
+# key.properties and all keystores are excluded from Git and source packaging.
+storeFile=C:/path/to/your/upload-key.jks
+storePassword=replace-me
+keyAlias=upload
+keyPassword=replace-me

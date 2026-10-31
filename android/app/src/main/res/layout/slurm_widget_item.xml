@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/job_row" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:baselineAligned="false">
+    <ImageView android:id="@+id/job_cluster_mark" android:layout_width="4dp"
+        android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="10dp">
+    <TextView android:id="@+id/job_server" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:includeFontPadding="false" android:textColor="#79AEFF" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+    <TextView android:id="@+id/job_name" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:includeFontPadding="false" android:layout_marginTop="4dp" android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold" android:maxLines="2" android:ellipsize="end" />
+    <TextView android:id="@+id/job_node" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:includeFontPadding="false" android:layout_marginTop="3dp" android:textColor="#9AAEC5" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:orientation="horizontal" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageView android:id="@+id/cpu_ring" android:layout_width="24dp" android:layout_height="24dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="7dp" android:orientation="vertical">
+                <TextView android:id="@+id/cpu_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:text="CPU" android:textColor="#79AEFF" android:textSize="10sp" android:maxLines="2" />
+                <TextView android:id="@+id/cpu_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginTop="2dp" android:textColor="#D0DBEB" android:textSize="10sp" android:maxLines="2" android:ellipsize="end" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageView android:id="@+id/mem_ring" android:layout_width="24dp" android:layout_height="24dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="7dp" android:orientation="vertical">
+                <TextView android:id="@+id/mem_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:text="内存" android:textColor="#63DFC5" android:textSize="10sp" android:maxLines="2" />
+                <TextView android:id="@+id/mem_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginTop="2dp" android:textColor="#D0DBEB" android:textSize="10sp" android:maxLines="2" android:ellipsize="end" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

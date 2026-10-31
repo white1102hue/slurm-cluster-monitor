@@ -1,0 +1,130 @@
+[
+  {
+    "name": "orthogonal full and partial constraints",
+    "poscar": "synthetic reference\n1.0\n2 0 0\n0 2 0\n0 0 2\nSi\n3\nSelective dynamics\nDirect\n0 0 0 F F F\n0 0 0 T F T\n0 0 0 T T T\n",
+    "outcar": "NIONS = 3\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 9 9 9\n0 0 0 3 40 4\n0 0 0 0.3 0.4 0\n------------------\nenergy(sigma->0) = -10.0\nreached required accuracy\nGeneral timing and accounting\n",
+    "oszicar": " 1 F= -10 E0= -1.001D+01 d E = 0\n",
+    "forces": [
+      [
+        1,
+        5.0,
+        40.311288741492746
+      ]
+    ],
+    "energies": [
+      [
+        1,
+        -10.01
+      ]
+    ],
+    "finished": true,
+    "converged": true
+  },
+  {
+    "name": "changing skew lattice uses direct displacement subspaces",
+    "poscar": "synthetic reference\n1.0\n2 0 0\n1 2 0\n0 0 2\nSi\n2\nSelective dynamics\nDirect\n0 0 0 F T F\n0 0 0 F F F\n",
+    "outcar": "NIONS = 2\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 2 0 0\n0 0 0 9 9 9\n------------------\ndirect lattice vectors\n2 0 0\n0 2 2\n0 0 2\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 2 0 0\n0 0 0 9 9 9\n------------------\n",
+    "oszicar": " 1 F= -10 E0= -10.0\n 1 F= -11 E0= -11.0\n",
+    "forces": [
+      [
+        1,
+        0.8944271909999159,
+        15.588457268119896
+      ],
+      [
+        2,
+        0.0,
+        15.588457268119896
+      ]
+    ],
+    "energies": [
+      [
+        1,
+        -10.0
+      ],
+      [
+        2,
+        -11.0
+      ]
+    ],
+    "finished": false,
+    "converged": false
+  },
+  {
+    "name": "incomplete blocks keep their observed record indices",
+    "poscar": "synthetic reference\n1.0\n2 0 0\n0 2 0\n0 0 2\nSi\n3\nSelective dynamics\nDirect\n0 0 0 T T T\n0 0 0 T T T\n0 0 0 T T T\n",
+    "outcar": "NIONS = 3\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 1 0 0\n0 0 0 0 1 0\n------------------\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 1 0 0\n0 0 0 0 2 0\n0 0 0 0 0 3\n------------------\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 ******* 0 0\n0 0 0 0 1 0\n0 0 0 0 0 1\n------------------\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 0 0 0\n",
+    "oszicar": " 1 F= -10 E0= -1.01D+01 d E = 0\n 2 F= -10 E0= -1.0E+\n 1 F= -12 E0= -12.0\n",
+    "forces": [
+      [
+        2,
+        3.0,
+        3.0
+      ]
+    ],
+    "energies": [
+      [
+        1,
+        -10.1
+      ],
+      [
+        2,
+        null
+      ],
+      [
+        3,
+        -12.0
+      ]
+    ],
+    "finished": false,
+    "converged": false
+  },
+  {
+    "name": "unknown constraints retain raw norms",
+    "poscar": null,
+    "outcar": "NIONS = 2\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 3 4 0\n0 0 0 0 0 0\n------------------\n",
+    "oszicar": "",
+    "forces": [
+      [
+        1,
+        null,
+        5.0
+      ]
+    ],
+    "energies": [],
+    "finished": false,
+    "converged": false
+  },
+  {
+    "name": "mismatched atom counts do not imply free forces",
+    "poscar": "synthetic reference\n1.0\n2 0 0\n0 2 0\n0 0 2\nSi\n3\nSelective dynamics\nDirect\n0 0 0 F F F\n0 0 0 F F F\n0 0 0 F F F\n",
+    "outcar": "NIONS = 2\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 3 4 0\n0 0 0 0 0 0\n------------------\n",
+    "oszicar": "",
+    "forces": [
+      [
+        1,
+        null,
+        5.0
+      ]
+    ],
+    "energies": [],
+    "finished": false,
+    "converged": false
+  },
+  {
+    "name": "all fixed is zero in a valid complete block",
+    "poscar": "synthetic reference\n1.0\n2 0 0\n0 2 0\n0 0 2\nSi\n1\nSelective dynamics\nDirect\n0 0 0 F F F\n",
+    "outcar": "NIONS = 1\nPOSITION TOTAL-FORCE (eV/Angst)\n------------------\n0 0 0 3 4 0\n------------------\n",
+    "oszicar": "",
+    "forces": [
+      [
+        1,
+        0.0,
+        5.0
+      ]
+    ],
+    "energies": [],
+    "finished": false,
+    "converged": false
+  }
+]

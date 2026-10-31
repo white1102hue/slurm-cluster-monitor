@@ -1,0 +1,5 @@
+<resources>
+    <string name="widget_description">汇总所有集群的运行作业与空闲节点，支持滚动和调整大小</string>
+    <string name="xiaomi_widget_name">集群概览</string>
+    <string name="xiaomi_widget_description">查看运行与排队作业、空闲节点及任务摘要，支持小米负一屏卡片</string>
+</resources>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xiaomi_card_root"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingStart="12dp" android:paddingEnd="12dp"
+    android:paddingTop="8dp" android:paddingBottom="8dp" android:orientation="vertical"
+    android:gravity="center_vertical" android:background="@drawable/xiaomi_widget_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="集群监控" android:textSize="13sp" android:textStyle="bold"
+            android:textColor="@color/xiaomi_widget_accent" android:maxLines="1" />
+        <TextView android:id="@+id/xiaomi_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:includeFontPadding="false" android:minHeight="24dp"
+            android:text="↻" android:textSize="18sp" android:minWidth="36dp" android:gravity="center"
+            android:contentDescription="刷新作业" android:textColor="@color/xiaomi_widget_accent" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:orientation="horizontal">
+        <TextView android:id="@+id/xiaomi_counts" android:layout_width="0dp" android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content" android:text="运行 — · 排队 —"
+            android:textSize="12sp" android:textStyle="bold" android:maxLines="1"
+            android:ellipsize="end" android:textColor="@color/xiaomi_widget_text" />
+        <TextView android:id="@+id/xiaomi_nodes" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="空闲节点 —" android:textSize="11sp" android:maxLines="1"
+            android:textColor="@color/xiaomi_widget_muted" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/xiaomi_job_band" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" android:paddingEnd="5dp"
+        android:paddingTop="2dp" android:paddingBottom="2dp" android:orientation="horizontal">
+    <ImageView android:id="@+id/xiaomi_cluster_mark" android:layout_width="3dp"
+        android:layout_height="match_parent" android:importantForAccessibility="no" />
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="5dp">
+    <TextView android:id="@+id/xiaomi_job" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="先启动监控"
+        android:textSize="12sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end"
+        android:textColor="@color/xiaomi_widget_text" />
+    <TextView android:id="@+id/xiaomi_metrics" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textSize="10sp" android:maxLines="1" android:ellipsize="end"
+        android:textColor="@color/xiaomi_widget_muted" />
+    </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/xiaomi_time" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginTop="3dp" android:text="尚未刷新 · 等待监控数据"
+        android:textSize="9sp" android:maxLines="1" android:ellipsize="end"
+        android:textColor="@color/xiaomi_widget_muted" />
+</LinearLayout>
