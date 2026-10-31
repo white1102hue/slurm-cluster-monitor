@@ -38,3 +38,7 @@ flutter build apk --release
 安装包位于 `build/app/outputs/flutter-apk/app-release.apk`。
 
 [测试与构建](docs/TESTING.md) · [版本记录](CHANGELOG.md)
+
+## 许可证
+
+[MIT License](LICENSE)
